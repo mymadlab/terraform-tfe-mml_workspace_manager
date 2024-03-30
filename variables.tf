@@ -16,9 +16,12 @@ variable "tags" {
   nullable    = false
 }
 
-#variable "github_token" {
-#  description = "The Github token"
-#  type        = string
-#  nullable    = false
-#  sensitive   = true
-#}
+variable "vcs_provider_name" {
+  description = "Name of the OATH VCS Provider"
+  type        = string
+  nullable    = false
+}
+
+variable "github_org" {
+  type = string
+}
