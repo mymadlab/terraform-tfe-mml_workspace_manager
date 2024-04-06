@@ -18,7 +18,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
  -->
 
-## [v1.1.7] - 2024-04-06: Module clean up effort
+## [v1.1.1] - 2024-04-06: Module clean up effort
 
 ### Added
 
