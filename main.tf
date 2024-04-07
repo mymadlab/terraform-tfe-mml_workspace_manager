@@ -7,9 +7,9 @@ resource "tfe_workspace" "workspace" {
   name         = var.workspace_name
   organization = var.tfe_org
   tag_names    = var.tags
-    vcs_repo {
-    branch             = "main"
-    identifier         = join("/", [var.github_org, var.workspace_name])
-    oauth_token_id     = data.tfe_oauth_client.vcs_client.oauth_token_id
+  vcs_repo {
+    branch         = "main"
+    identifier     = join("/", [var.github_org, var.workspace_name])
+    oauth_token_id = data.tfe_oauth_client.vcs_client.oauth_token_id
   }
 }

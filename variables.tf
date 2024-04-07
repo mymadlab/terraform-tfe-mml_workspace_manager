@@ -24,5 +24,5 @@ variable "vcs_provider_name" {
 
 variable "github_org" {
   description = "The name of the github organization."
-  type = string
+  type        = string
 }
