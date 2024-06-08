@@ -1,5 +1,5 @@
 variable "tfe_org" {
-  description = "Name of the organization in terraform clould."
+  description = "Name of the organization in terraform cloud."
   type        = string
   nullable    = false
 }
@@ -14,6 +14,12 @@ variable "tags" {
   description = "List of tags."
   type        = list(string)
   nullable    = false
+}
+
+variable "terraform_version" {
+  description = "Version of terraform to be run by this workspace"
+  default = "~> 1.7.5"
+  type = "string"
 }
 
 variable "vcs_provider_name" {
