@@ -1,13 +1,6 @@
-variable "tfe_org" {
-  description = "Name of the organization in terraform cloud."
+variable "github_org" {
+  description = "The name of the github organization."
   type        = string
-  nullable    = false
-}
-
-variable "workspace_name" {
-  description = "Name of the workspace."
-  type        = string
-  nullable    = false
 }
 
 variable "tags" {
@@ -16,10 +9,16 @@ variable "tags" {
   nullable    = false
 }
 
+variable "tfe_org" {
+  description = "Name of the organization in terraform cloud."
+  type        = string
+  nullable    = false
+}
+
 variable "terraform_version" {
-  description = "Version of terraform to be run by this workspace"
-  default = "~> 1.7.5"
-  type = "string"
+  description = "Version of terraform to be run by the workspace"
+  default     = "~>1.7.0"
+  type        = string
 }
 
 variable "vcs_provider_name" {
@@ -28,7 +27,8 @@ variable "vcs_provider_name" {
   nullable    = false
 }
 
-variable "github_org" {
-  description = "The name of the github organization."
+variable "workspace_name" {
+  description = "Name of the workspace."
   type        = string
+  nullable    = false
 }

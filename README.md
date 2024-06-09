@@ -9,13 +9,14 @@ Responsible for creating, updating, and deleting workspaces in terraform cloud.
 ```HCL
 module "tfe_workspace_manager" {
   source  = "app.terraform.io/mymadlab/mml_workspace_manager/tfe"
-  version = "~>0.1.0"
+  version = "~>0.2.0"
 
-  workspace_name    = "name_of_workspace"
-  tfe_org           = "name_of_TFE_org"
-  tags              = ["list", "of", "tags"]
-  vcs_provider_name = "my_vcs_provider_name_here"
   github_org        = "name_of_github_org"
+  tags              = ["list", "of", "tags"]
+  tfe_org           = "name_of_TFE_org"
+  terraform_version = "~>1.7.0"
+  vcs_provider_name = "my_vcs_provider_name_here"
+  workspace_name    = "name_of_workspace"
 
 }
 ```
